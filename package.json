@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .ts",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-    "migration:create": "typeorm migration:create src/database/migrations/"
+    "migration-docker-run": "typeorm migration:run -c external-docker"
   },
   "dependencies": {
     "@types/csv-parse": "^1.2.2",

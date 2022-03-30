@@ -3,6 +3,7 @@ import swagger from "swagger-ui-express";
 import "reflect-metadata";
 
 import "./database";
+import "./shared/container";
 
 import { router } from "./routes";
 import swaggerSetup from "./swagger.json";
