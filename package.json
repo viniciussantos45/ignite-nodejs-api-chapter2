@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "migration:create": "typeorm migration:create src/database/migrations/"
   },
   "dependencies": {
     "@types/csv-parse": "^1.2.2",
@@ -18,8 +20,12 @@
     "eslint-plugin-import-helpers": "^1.2.1",
     "express": "^4.17.3",
     "multer": "^1.4.4",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
     "swagger-ui-express": "^4.3.0",
     "ts-node-dev": "^1.1.8",
+    "tsyringe": "^4.6.0",
+    "typeorm": "^0.2.31",
     "typescript": "^4.6.2",
     "uuid": "^8.3.2"
   },
@@ -35,6 +41,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "tsconfig-paths": "^3.14.1"
   }
 }
