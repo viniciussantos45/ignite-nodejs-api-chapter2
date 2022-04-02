@@ -8,8 +8,6 @@ import "./shared/container";
 import { router } from "./routes";
 import swaggerSetup from "./swagger.json";
 
-// import "./database";
-
 const app = express();
 
 app.use(express.json());
