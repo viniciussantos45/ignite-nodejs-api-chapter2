@@ -9,7 +9,7 @@
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "migration-docker-run": "typeorm migration:run -c external-docker",
     "test": "jest",
-	"seed:admin": "ts-node-dev src/shared/infra/typeorm/seeds/admin.ts"
+    "seed:admin": "ts-node-dev src/shared/infra/typeorm/seeds/admin.ts"
   },
   "dependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -22,6 +22,7 @@
     "@types/uuid": "^8.3.4",
     "bcryptjs": "^2.4.3",
     "csv-parse": "^5.0.4",
+    "dayjs": "^1.11.1",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import-helpers": "^1.2.1",
     "express": "^4.17.3",

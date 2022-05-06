@@ -71,3 +71,4 @@
 * O aluguel deve ter duração miníma de 24 horas.
 * Não é possível fazer um aluguel caso já exista um em aberto para o usuário em questão.
 * Apenas é possível fazer aluguel de carro disponível (carros disponíveis)
+* O usuário deve estar logado na aplicação
